@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Sender</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+    integrity="sha256-9mbkOfVho3ZPXfM7W8sV2SndrGDuh7wuyLjtsWeTI1Q=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="steganography.min.js"></script>
+</head>
+
+<body>
+  <div class="cont">
+    <h1>Sender Side</h1>
+
+
+    <div class="">
+      <input class="ui inverted green button" type="file" name="pic" accept="image/*" onchange="readURL(this);" />
+      <br>
+      <div class="ui input">
+
+        <input id="text" type="text" placeholder="Enter the message which you want to hide." />
+      </div>
+      <br>
+      <button class="ui inverted red button" id="button1" onclick="hideText()">
+        Hide Message Into Image
+      </button>
+
+    </div>
+    <div class="img-cont">
+      <div class="img1">
+        <h5>Source Image</h5>
+
+        <img id="image1" src="" alt="" />
+      </div>
+
+
+      <div class="">
+        <h5>Message Encoded Image</h5>
+        <img id="image2" src="" alt="" />
+
+      </div>
+     
+    </div>
+    <a href="receiver.html"><button class="button">Decode</button></a>
+    </div>
+
+
+
+
+
+
+  </div>
+
+
+
+  <script src="index.js"></script>
+</body>
+
+</html>

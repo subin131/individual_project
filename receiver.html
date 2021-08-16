@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receiver</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+    integrity="sha256-9mbkOfVho3ZPXfM7W8sV2SndrGDuh7wuyLjtsWeTI1Q=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="steganography.min.js"></script>
+</head>
+<body>
+    <div class="cont">
+        <div class="">
+            <h1>Receiver Side</h1>
+            <input class="ui inverted green  button" type="file" name="pic" accept="image/*" onchange="decode(this);" />
+            <img class="opa" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="">
+            <h5>Decoded Text:</h5>
+            <h2 id="decoded"></h2>
+      
+    </div>
+</body>
+</html>
